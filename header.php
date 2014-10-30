@@ -32,12 +32,6 @@
 					</a>
 				<?php } // end if ( ! empty( $header_image ) ) ?>
 
-
-				<div class="site-branding">
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<h4 class="site-description"><?php bloginfo( 'description' ); ?></h4>
-				</div>
-
 			</div>
 		</div>
 	</div><!-- .container -->
