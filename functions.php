@@ -150,3 +150,28 @@ require get_template_directory() . '/includes/jetpack.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
+
+/**
+ * Load the framework
+ */
+require_once get_template_directory() . '/includes/framework/bootstrap.php';
+
+// options
+$tmpl_opt  = get_template_directory() . '/includes/framework/admin/option/option.php';
+
+/**
+ * Create instance of Options
+ */
+$theme_options = new VP_Option(array(
+	'is_dev_mode'           => false,                                  // dev mode, default to false
+	'option_key'            => 'vpt_option',                           // options key in db, required
+	'page_slug'             => 'vpt_option',                           // options page slug, required
+	'template'              => $tmpl_opt,                              // template file path or array, required
+	'menu_page'             => 'themes.php',                           // parent menu slug or supply `array` (can contains 'icon_url' & 'position') for top level menu
+	'use_auto_group_naming' => true,                                   // default to true
+	'use_util_menu'         => true,                                   // default to true, shows utility menu
+	'minimum_role'          => 'edit_theme_options',                   // default to 'edit_theme_options'
+	'layout'                => 'fixed',                                // fluid or fixed, default to fixed
+	'page_title'            => __( 'Theme Options', '_rappid' ), // page title
+	'menu_label'            => __( 'Theme Options', '_rappid' ), // menu label
+));
