@@ -8,7 +8,7 @@
  * E.g., it puts together the home page when no home.php file exists.
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package _tk
+ * @package _rappid
  */
 
 get_header(); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 
 		<?php endwhile; ?>
 
-		<?php _tk_content_nav( 'nav-below' ); ?>
+		<?php _rappid_content_nav( 'nav-below' ); ?>
 
 	<?php else : ?>
 
