@@ -259,6 +259,7 @@ text-align: center;
     overflow:hidden;
     text-align:center;   
     line-height:1.2em;
+    font-size: 20px;
 }
 
 .title-divider:before, .title-divider:after{
@@ -275,4 +276,8 @@ text-align: center;
 }
 .testimonials {
 text-align: center;
+}
+.testimonials i {
+font-size: 60px;
+color: #b7b7b7;
 }

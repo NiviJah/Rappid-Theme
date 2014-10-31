@@ -108,6 +108,8 @@ function _rappid_scripts() {
 	// load bootstrap wp js
 	wp_enqueue_script( '_rappid-bootstrapwp', get_template_directory_uri() . '/includes/js/bootstrap-wp.js', array('jquery') );
 
+	wp_enqueue_script( '_rappid-knob', get_template_directory_uri() . '/includes/js/jquery.knob.min.js', array('jquery') );
+
 	wp_enqueue_script( '_rappid-skip-link-focus-fix', get_template_directory_uri() . '/includes/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -155,6 +157,11 @@ require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
  * Load the framework
  */
 require_once get_template_directory() . '/includes/framework/bootstrap.php';
+
+function add_noconflicts () {
+	echo '<script> var $ = jQuery.noConflict(); </script>';
+}
+add_action('wp_head', 'add_noconflicts');
 
 // options
 $tmpl_opt  = get_template_directory() . '/includes/framework/admin/option/option.php';
