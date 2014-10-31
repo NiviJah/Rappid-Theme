@@ -5,25 +5,15 @@
 
 get_header(); ?>
 
-	<?php if ( have_posts() ) : ?>
+<?php 
+get_template_part( 'templates/our', 'services' );
+get_template_part( 'templates/parallax' );
+get_template_part( 'templates/testimonials' );
+get_template_part( 'templates/our', 'team' );
+get_template_part( 'templates/our', 'skills' );
 
-		<?php /* Start the Loop */ ?>
-		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php
+ ?>
 
-				get_template_part( 'content', get_post_format() );
-			?>
 
-		<?php endwhile; ?>
-
-		<?php _rappid_content_nav( 'nav-below' ); ?>
-
-	<?php else : ?>
-
-		<?php get_template_part( 'no-results', 'index' ); ?>
-
-	<?php endif; ?>
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

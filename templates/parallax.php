@@ -5,10 +5,15 @@
 */ 
 
 ?>
+
 <div class="row">
-	<div class="call-to-action">
+	<div class="col-md-12">
+		<div class="call-to-action">
+	<div class="call-to-action-inner">
 		<div class="call-title">title</div>
-			<div class="btn">btn</div>
+			<span class="btn btn-success">btn</span> <div class="btn btn-danger">btn</div>
+			</div>
 
 	</div>
 </div>
+</div>	

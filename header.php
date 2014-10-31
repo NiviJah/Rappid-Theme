@@ -15,33 +15,19 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <?php wp_head(); ?>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'> <!-- TEMP -->
 </head>
 
 <body <?php body_class(); ?>>
 	<?php do_action( 'before' ); ?>
 
-<header id="masthead" class="site-header" role="banner">
-	<div class="container">
-		<div class="row">
-			<div class="site-header-inner col-sm-12">
 
-				<?php $header_image = get_header_image();
-				if ( ! empty( $header_image ) ) { ?>
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
-					</a>
-				<?php } // end if ( ! empty( $header_image ) ) ?>
-
-			</div>
-		</div>
-	</div><!-- .container -->
-</header><!-- #masthead -->
 
 <nav class="site-navigation">
 	<div class="container">
 		<div class="row">
 			<div class="site-navigation-inner col-sm-12">
-				<div class="navbar navbar-default">
+				<div class="navbar">
 					<div class="navbar-header">
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -73,8 +59,26 @@
 	</div><!-- .container -->
 </nav><!-- .site-navigation -->
 
+
+<header id="masthead" class="site-header" role="banner">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="site-header-inner col-sm-12">
+
+				<?php $header_image = get_header_image();
+				if ( ! empty( $header_image ) ) { ?>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+					</a>
+				<?php } // end if ( ! empty( $header_image ) ) ?>
+
+			</div>
+		</div>
+	</div><!-- .container -->
+</header><!-- #masthead -->
+
 <div class="main-content">
 	<div class="container">
 		<div class="row">
-			<div id="content" class="main-content-inner col-sm-12 col-md-8">
+			<div id="content" class="main-content-inner col-sm-12 col-md-12">
 

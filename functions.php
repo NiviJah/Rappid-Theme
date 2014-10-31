@@ -4,7 +4,7 @@
  *
  * @package _rappid
  */
-
+add_filter('show_admin_bar', '__return_false');
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
