@@ -5,6 +5,7 @@
 */ 
 
 ?>
+<div class="section">
 <div class="row">
 	<div class="col-md-12">
 	<div class="testimonials col-md-8 col-md-offset-2">
@@ -15,4 +16,5 @@
 				<div class="col-md-12 testimonials-name">name</div>
 </div>
 	</div>
+</div>
 </div>

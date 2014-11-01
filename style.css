@@ -222,8 +222,19 @@ display: block;
 /* Hey, if you don't need my comments anymore, just delete me! :)  */
 
 /*TEMP STYLES*/
+.navbar{
+	border: none;
+	margin-bottom: 10px;
+margin-top: 10px;
+}
+.container{
+	padding: 0px;
+}
+.section {
+padding-top: 20px;
+}
 .call-to-action{
-	background-image: url("http://placekitten.com/1200/430");
+	background-image: url("images/slider1.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	height: 430px;
@@ -232,14 +243,22 @@ display: block;
 .our-services {
 text-align: center;
 }
-
+.our-services h2 {
+font-weight: 300;
+margin-bottom: 30px;
+}
+.services-title {
+font-size: 22px;
+font-weight: 300;
+margin: 10px 0;
+}
 .services-icon {
-background: #b7b7b7;
+background: #f0f0f0;
 border-radius: 75px;
-width: 50px;
-height: 50px;
-font-size: 25px;
-line-height: 50px;
+width: 80px;
+height: 80px;
+font-size: 30px;
+line-height: 80px;
 margin: 0 auto;
 }
 .call-to-action-inner {
@@ -248,8 +267,22 @@ margin-left: 10%;
   top: 50%;
   transform: translateY(-50%);
 }
+.call-title {
+font-size: 60px;
+color: #fff;
+font-weight: 300;
+margin: 10px 0;
+}
 .our-team {
 text-align: center;
+}
+.member-name {
+margin-top: 15px;
+font-size: 20px;
+font-weight: 600;
+}
+p.member-content {
+margin-top: 15px;
 }
 
 .title-divider{
@@ -276,8 +309,18 @@ text-align: center;
 }
 .testimonials {
 text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
 }
 .testimonials i {
 font-size: 60px;
 color: #b7b7b7;
+
+}
+.our-skills {
+text-align: center;
+}
+.skills-title {
+margin-bottom: 65px;
+margin-top: 100px;
 }
