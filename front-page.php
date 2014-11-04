@@ -5,12 +5,15 @@
 
 get_header(); ?>
 
-<?php 
+<?php
+get_template_part( 'templates/slider'); 
 get_template_part( 'templates/our', 'services' );
 get_template_part( 'templates/parallax' );
 get_template_part( 'templates/testimonials' );
 get_template_part( 'templates/our', 'team' );
 get_template_part( 'templates/our', 'skills' );
+
+
 
 
  ?>

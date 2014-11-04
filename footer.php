@@ -36,12 +36,7 @@
 		});
 		    });
 
-    	var t = $(".skills-arch").offset().top;
-
-$(document).scroll(function(){
-    if($(this).scrollTop() > t)
-    {   
-       var initval = 20;
+    	var initval = 20;
     	var endValue = 80;
 			$({value: 0}).animate({value: endValue}, {
 			duration: 1200,
@@ -52,11 +47,7 @@ $(document).scroll(function(){
 			//$('#preval').val(initval);
 			}
 		});
-    }
-});
 </script>
-
-
 
 </body>
 </html>

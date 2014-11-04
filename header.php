@@ -37,8 +37,16 @@
 					  <span class="icon-bar"></span>
 					</button>
 
-					<!-- Your site title as branding in the menu -->
-					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					<?php
+			    $logo = esc_url( get_template_directory_uri() . '/images/logo.png' );
+				if ( isset( $framework_options['framework_logo'] ) && $framework_options['framework_logo'] != '' ) { $logo = $framework_options['framework_logo']; }
+				if ( isset( $framework_options['framework_logo'] ) && $framework_options['framework_logo'] != '' && is_ssl() ) { $logo = preg_replace("/^http:/", "https:", $framework_options['framework_logo']); }
+			?>
+			<?php if ( ! isset( $framework_options['woo_texttitle'] ) || $framework_options['woo_texttitle'] != 'true' ) { ?>
+			    <a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr( get_bloginfo( 'description' ) ); ?>">
+			    	<img src="<?php echo $logo; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" />
+			    </a>
+		    <?php } ?>
 				  </div>
 
 				<!-- The WordPress Menu goes here -->
@@ -70,8 +78,8 @@
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 					</a>
+					
 				<?php } // end if ( ! empty( $header_image ) ) ?>
-
 			</div>
 		</div>
 	</div><!-- .container -->
