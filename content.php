@@ -4,7 +4,7 @@
  */
 ?>
 
-<!-- HI YANIV -->
+
 
 <?php // Styling Tip!
 
