@@ -10,8 +10,12 @@ get_template_part( 'templates/slider');
 get_template_part( 'templates/our', 'services' );
 get_template_part( 'templates/parallax' );
 get_template_part( 'templates/testimonials' );
+get_template_part( 'templates/stripteam' );
 get_template_part( 'templates/our', 'team' );
 get_template_part( 'templates/our', 'skills' );
+get_template_part( 'templates/stripcontact' );
+get_template_part( 'templates/contactus' );
+get_template_part( 'templates/contactsocial' );
 
 
 

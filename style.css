@@ -271,6 +271,120 @@ color: #fff;
 font-weight: 300;
 margin: 10px 0;
 }
+/*CONTACT STRIP*/
+.contactstrip {
+	background: #ccb6a1;
+	height: 430px;
+	padding: 160px 130px 152px;
+	text-align: left;
+	text-indent: 0;
+	text-decoration: none;
+	font-size: 50px;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 500;
+	font-family: Roboto, sans-serif;
+	margin: 81px 0 0;
+	position: relative;
+	overflow: hidden;
+}
+/*SOCIALSTRIP*/
+.social {
+	padding: 147px 0 106px;
+	background: #ccb6a1;
+	height: 430px;
+	position: relative;
+	margin: 9px 0 0;
+}
+.connect_with_us_follow_us {
+	text-align: left;
+	text-indent: 0;
+	text-decoration: none;
+	font-size: 50px;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 300;
+	font-family: Roboto, sans-serif;
+	margin: 0 auto -14px;
+	width: 704px;
+	position: relative;
+	right: 118px;
+}
+.icons-group {
+	width: 489px;
+	position: relative;
+	right: 221.5px;
+	margin: 30px auto 0;
+}
+.icons-inner {
+	float: left;
+	margin: 0 27px 0 0;
+}
+.c-github {
+	margin-top: 6px !important;
+	height: 36px;
+	width: 36px;
+}
+.c-flickr {
+	margin-top: 6px !important;
+	height: 36px;
+	width: 36px;
+
+}
+.c-vimeo {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+
+}
+.c-twitter {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+
+}
+.c-facebook {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+
+}
+
+.c-google {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+}
+.c-pinterest {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+
+}
+.c-tumblr {
+	margin-top: 6px !important;
+		height: 36px;
+	width: 36px;
+}
+/*TEAM STRIP*/
+.the_team {
+	position: relative;
+	margin: 68px 0 0;
+}
+.striptitle {
+	background: #ccb6a1;
+	height: 430px;
+	padding: 172px 132px 163px;
+	text-align: left;
+	text-indent: 0;
+	text-decoration: none;
+	font-size: 40px;
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 500;
+	font-family: Roboto, sans-serif;
+}
+
 .our-team {
 text-align: center;
 }
