@@ -5,10 +5,6 @@
 */ 
 
 ?>
-<?php 
-/*Revslider _Rappid*/
- ?>
-
 <div class="section">
 <div class="row">
 <div class="contactform">
